@@ -1,9 +1,11 @@
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useQuery } from '@tanstack/react-query';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Movies = () => {
      const navigate = useNavigate();
+     
 
      const { data: shows = [] } = useQuery({
           queryKey: ['shows'],
