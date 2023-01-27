@@ -26,7 +26,7 @@ const Navbar = () => {
 
                     <ul className={` w-full bg-gray-400 md:flex justify-end  absolute md:static duration-300 ease-in ${open ? 'top-14 text-center font-bold' : 'top-[-150px]'}`}>
                          {
-                              routes.map(route => <li className={`ml-10 text-center ${open && 'my-3'}`}><Link to={route.path}>{route.name}</Link></li>)
+                              routes.map(route => <li key={route.id} className={`ml-10 text-center ${open && 'my-3'}`}><Link to={route.path}>{route.name}</Link></li>)
                          }
                     </ul>
                </div>

@@ -1,10 +1,12 @@
 import React from 'react';
+import Movies from './Movies/Movies';
 import TopBanner from './TopBanner/TopBanner';
 
 const Home = () => {
      return (
-          <div>
+          <div className='container mx-auto'>
                <TopBanner></TopBanner>
+               <Movies></Movies>
           </div>
      );
 };
