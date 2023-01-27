@@ -20,9 +20,9 @@ const Navbar = () => {
                                    : <Bars3Icon />
                          }
                     </div>
-                    <div className='text-xl font-serif'>
+                    <Link to={'/'} className='text-xl font-serif'>
                          Logo
-                    </div>
+                    </Link>
 
                     <ul className={` w-full bg-gray-400 md:flex justify-end  absolute md:static duration-300 ease-in ${open ? 'top-14 text-center font-bold' : 'top-[-150px]'}`}>
                          {
