@@ -12,8 +12,8 @@ const Navbar = () => {
           { id: 5, name: 'About', path: '/' }
      ]
      return (
-          <nav className='bg-teal-500/40 py-4 '>
-               <div className='flex items-center container mx-auto'>
+          <nav className='bg-teal-500/40 py-5 '>
+               <div className='flex items-center container mx-auto lg:mx-5'>
                     <div onClick={() => setOpen(!open)} className="h-5 w-5 mx-2 md:hidden cursor-pointer">
                          {
                               open ? <XMarkIcon />
