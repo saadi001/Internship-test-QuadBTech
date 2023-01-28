@@ -1,6 +1,5 @@
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useQuery } from '@tanstack/react-query';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Movies = () => {
@@ -23,8 +22,8 @@ const Movies = () => {
      }
 
      return (
-          <div>
-               <h3>All shows</h3>
+          <div id='shows'>
+               <h3 className='text-3xl mb-3 ml-3 md:ml-0'>All shows</h3>
                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-5 sm:mx-3 md:mx-1 lg:mx-0'>
                     {
                          shows.map(show => <div key={show.show.id}>
